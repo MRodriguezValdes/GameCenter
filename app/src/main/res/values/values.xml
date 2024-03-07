@@ -1,0 +1,5 @@
+<resources>
+    <!-- Define los atributos cardStrokeColor y cardStrokeWidth -->
+    <attr name="cardStrokeColor" format="color" />
+    <attr name="cardStrokeWidth" format="dimension" />
+</resources>

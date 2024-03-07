@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#6200EE"
+    android:orientation="vertical">
+
+    <!-- Otras vistas o elementos pueden ir aquí -->
+
+
+    <!-- ConstraintLayout que contiene los dos primeros TextViews -->
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="237dp"
+        android:background="#6200EE">
+
+        <!-- Puedes añadir más elementos al ConstraintLayout si es necesario -->
+
+        <TextView
+            android:id="@+id/score"
+            android:layout_width="233dp"
+            android:layout_height="55dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="80dp"
+            android:text="Score:"
+            android:textColor="#FAFAFA"
+            android:textSize="34sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/bestScore"
+            android:layout_width="233dp"
+            android:layout_height="55dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="148dp"
+            android:text="Best:"
+            android:textColor="#FFFFFF"
+            android:textSize="34sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <Button
+            android:id="@+id/button"
+            android:layout_width="106dp"
+            android:layout_height="53dp"
+            android:layout_marginEnd="32dp"
+            android:layout_marginBottom="36dp"
+            android:background="#7E6083"
+            android:shadowColor="#0E0E0E"
+            android:text="Play"
+            android:textSize="22dp"
+            app:backgroundTint="#725C9A"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent" />
+
+        <Button
+            android:id="@+id/undo_button"
+            android:layout_width="106dp"
+            android:layout_height="53dp"
+            android:layout_marginEnd="32dp"
+            android:layout_marginBottom="104dp"
+            android:background="#7E6083"
+            android:shadowColor="#0E0E0E"
+            android:text="Undo"
+            android:textSize="22dp"
+            app:backgroundTint="#725C9A"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent" />
+
+        <TextView
+            android:id="@+id/textView17"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:layout_marginEnd="35dp"
+            android:text="2048"
+            android:textColor="#FFFFFF"
+            android:textSize="60sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.538"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+    <GridLayout
+        android:id="@+id/gridLayout"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:alignmentMode="alignMargins"
+        android:background="#6200EE"
+        android:columnCount="4"
+        android:columnOrderPreserved="false"
+        android:rowCount="4"
+        android:rowOrderPreserved="false"
+        android:layout_margin="2dp">
+
+        <!-- Text Views que representan las celdas del tablero -->
+
+        <TextView
+            android:id="@+id/textView2"
+            style="@style/GridLayoutTextViewStyle2048"
+            android:text="0" />
+
+        <TextView
+            android:id="@+id/textView3"
+            style="@style/GridLayoutTextViewStyle2048"
+            android:text="0" />
+
+        <TextView
+            android:id="@+id/textView4"
+            style="@style/GridLayoutTextViewStyle2048"
+            android:text="0" />
+
+        <TextView
+            android:id="@+id/textView5"
+            style="@style/GridLayoutTextViewStyle2048"
+            android:text="0" />
+
+        <TextView
+            android:id="@+id/textView7"
+            style="@style/GridLayoutTextViewStyle2048"
+            android:text="0" />
+
+        <TextView
+            android:id="@+id/textView8"
+            style="@style/GridLayoutTextViewStyle2048"
+            android:text="0" />
+
+        <TextView
+            android:id="@+id/textView9"
+            style="@style/GridLayoutTextViewStyle2048"
+            android:text="0" />
+
+        <TextView
+            android:id="@+id/textView10"
+            style="@style/GridLayoutTextViewStyle2048"
+            android:text="0" />
+
+        <TextView
+            android:id="@+id/textView11"
+            style="@style/GridLayoutTextViewStyle2048"
+            android:text="0" />
+
+        <TextView
+            android:id="@+id/textView12"
+            style="@style/GridLayoutTextViewStyle2048"
+            android:text="0" />
+
+        <TextView
+            android:id="@+id/textView13"
+            style="@style/GridLayoutTextViewStyle2048"
+            android:text="0" />
+
+        <TextView
+            android:id="@+id/textView14"
+            style="@style/GridLayoutTextViewStyle2048"
+            android:text="0" />
+
+        <TextView
+            android:id="@+id/textView15"
+            style="@style/GridLayoutTextViewStyle2048"
+            android:text="0" />
+
+        <TextView
+            android:id="@+id/textView16"
+            style="@style/GridLayoutTextViewStyle2048"
+            android:text="0" />
+
+        <TextView
+            android:id="@+id/textView6"
+            style="@style/GridLayoutTextViewStyle2048"
+            android:text="0" />
+
+        <TextView
+            android:id="@+id/textView"
+            style="@style/GridLayoutTextViewStyle2048"
+            android:text="0" />
+
+
+    </GridLayout>
+</LinearLayout>
